@@ -1,0 +1,100 @@
+header {
+    background-color: black;
+    padding: 5px 15px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--lightgreen);
+    user-select: none;
+
+}
+
+
+div.hamburger {
+    font-size: 24pt;
+    cursor: pointer;
+}
+
+header .header-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-links a{
+    color: linen;
+    cursor: pointer;
+    font-size: 15pt;
+    padding: 0px 10px;
+    text-decoration: none;
+}
+
+.header-links a:hover, div.hamburger:hover {
+    color: var(--lightpink);
+}
+
+.header-links a.active{
+    color: var(--lightgreen);
+    border-bottom: 1px solid var(--lightgreen);
+    cursor: default;
+}
+
+
+.nav-offcanvas {
+    background-color: var(--darkgreen);
+}
+
+.nav-offcanvas .offcanvas-body {
+    padding-top: 35px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 35px;
+}
+
+div.content { 
+    width: 100%;
+    position: relative;
+    background-color: black;
+    border: 1px solid var(--lightgreen);
+    padding: 5px 10px;
+
+}
+
+div.layout {
+    padding-bottom: 15px;
+}
+
+@media screen and (max-width: 650px){
+    .container-fluid {
+        padding: 8px;
+    }
+}
+
+
+@media screen and (max-width: 649px){
+    header .header-links {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    div.hamburger {
+        display: none;
+    }
+
+    div.content {
+        padding: 15px 10px;
+
+        width: 98%;
+        background-color: rgba(0, 0, 0, 0.92);
+        margin: 0 auto;
+        border-radius: 5px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+
+    div.content {
+        padding: 15px 20px;
+
+        width: 88%;
+
+    }
+}

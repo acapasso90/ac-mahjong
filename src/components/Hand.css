@@ -1,0 +1,30 @@
+div.hand {
+    border: 1px solid lightgreen;
+    padding: 10px; 
+    flex: 50%;
+}
+
+div.hand .hand-tiles {
+    flex-wrap: wrap;
+    row-gap: 5px;
+}
+
+div.hand .hand-name {
+    font-size: 14pt;
+    color: var(--lightpink);
+}
+
+div.hand .nickname {
+    font-style: italic;
+    color: linen;
+    font-size: 10pt;
+}
+
+
+@media screen and (max-width: 850px) {
+    div.hand {
+        padding: 10px; 
+        flex: 100%;
+    }
+    
+}

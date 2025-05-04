@@ -1,0 +1,9 @@
+.search-bar input {
+    background-color: linen;
+    border-radius: 2px;
+}
+
+.search-bar input::selection{
+    background-color: rgb(218, 178, 104);
+    color: black;
+}

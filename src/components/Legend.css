@@ -1,0 +1,21 @@
+div.legend ul {
+    list-style: none;
+}
+
+div.legend .subtext {
+    font-size: 12pt;
+    color: var(--lightpink);
+    font-style: italic;
+}
+
+div.legend li {
+    margin: 8px 0px;
+    letter-spacing: 3px;
+    font-size: 15pt;
+}
+
+div.legend .tile {
+    height: 60px;
+    max-width: 56px;
+    margin-top: 2px;
+}

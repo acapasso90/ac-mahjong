@@ -1,0 +1,102 @@
+.background{
+    background: #000000;  
+    width: 100vw;
+    height:100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -222;
+}
+
+
+
+.background .tile{
+    position: absolute;
+    display: block;
+    list-style: none;
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    padding: 2px;
+}
+
+.background .tile .number {
+    display: none;
+}
+
+.background .tile:nth-child(1){
+    left: 5%;
+    height: 105px;
+    animation-delay: 2s;
+}
+
+
+.background .tile:nth-child(2){
+    left: 25%;
+    height: 75px;
+
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.background .tile:nth-child(3){
+    left: 70%;
+    height: 55px;
+    animation-delay: 4s;
+}
+
+.background .tile:nth-child(4){
+    left: 40%;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.background .tile:nth-child(5){
+    left: 65%;
+    animation-delay: 0s;
+}
+
+.background .tile:nth-child(6){
+    left: 88%;
+    height: 87px;
+
+    animation-delay: 3s;
+}
+
+.background .tile:nth-child(7){
+    left: 35%;
+    animation-delay: 7s;
+}
+
+.background .tile:nth-child(8){
+    left: 50%;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.background .tile:nth-child(9){
+    left: 12%;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.background .tile:nth-child(10){
+    left: 95%;
+    height: 85px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+    }
+
+    100%{
+        transform: translateY(-125vh) rotate(720deg);
+    }
+
+}
